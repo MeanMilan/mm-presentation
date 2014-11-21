@@ -193,3 +193,15 @@ ul.block{
     margin-bottom: 10px;
   }
  }
+
+#codemotion{
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  z-index: 200;
+  height: 62px;
+  width: 300px;
+  background-image: url('../images/codemotion_intro.png');
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
