@@ -207,13 +207,28 @@ body {
 }
 
 /* line 170, ../sass/main.scss */
+.fa {
+  font-family: FontAwesome !important;
+}
+
+/* line 174, ../sass/main.scss */
+.social {
+  font-size: 2em !important;
+  margin-top: 50px !important;
+}
+/* line 177, ../sass/main.scss */
+.social a:not(:last-child) {
+  margin-right: 20px;
+}
+
+/* line 182, ../sass/main.scss */
 ul.block {
   list-style-type: none;
   margin-top: 20px;
   padding-top: 20px;
   text-align: center;
 }
-/* line 176, ../sass/main.scss */
+/* line 188, ../sass/main.scss */
 ul.block li:not(:last-child) {
   border-bottom: 1px solid #ccc;
   padding-left: 20px;
