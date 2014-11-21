@@ -11,6 +11,15 @@ module.exports = function(grunt) {
                     livereload: true,
                 },
             },
+            livereload: {
+                options: {
+                    livereload: '<%= connect.options.livereload %>'
+                },
+                files: [
+                    '*.html',
+                    'images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
+                ]
+            },
         },
         compass: {
             dist: {
@@ -20,10 +29,28 @@ module.exports = function(grunt) {
                     environment: 'production'
                 }
             }
-        }
+        },
+        connect: {
+            options: {
+                port: 9000,
+                // Change this to '0.0.0.0' to access the server from outside.
+                hostname: 'localhost',
+                livereload: 35729
+            },
+            livereload: {
+                options: {
+                    open: 'http://meanday.local:9000',
+                }
+            }
+        },
     });
 
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-compass');
+    grunt.loadNpmTasks('grunt-contrib-connect');
 
+    grunt.registerTask('serve', [
+        'connect',
+        'watch'
+    ]);
 };
