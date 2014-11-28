@@ -180,55 +180,60 @@ body {
 /*********************************************
  * CUSTOM STYLES
  *********************************************/
-/* line 147, ../sass/main.scss */
+/* line 148, ../sass/main.scss */
+.reveal h3 + h3 {
+  margin-top: 50px;
+}
+
+/* line 153, ../sass/main.scss */
 .dark-content {
   color: #111;
 }
-/* line 149, ../sass/main.scss */
+/* line 155, ../sass/main.scss */
 .dark-content h1, .dark-content h2, .dark-content h3, .dark-content h4, .dark-content h5 {
   color: #111;
 }
-/* line 153, ../sass/main.scss */
+/* line 159, ../sass/main.scss */
 .dark-content ul.block > li:not(:last-child) {
   border-bottom: 1px solid #111;
 }
-/* line 157, ../sass/main.scss */
+/* line 163, ../sass/main.scss */
 .dark-content .separator {
   height: 1px;
   border-top: 1px solid #111;
   margin: 20px auto;
 }
 
-/* line 164, ../sass/main.scss */
+/* line 170, ../sass/main.scss */
 .separator {
   height: 1px;
   background: #ccc;
   margin: 40px auto !important;
 }
 
-/* line 170, ../sass/main.scss */
+/* line 176, ../sass/main.scss */
 .fa {
   font-family: FontAwesome !important;
 }
 
-/* line 174, ../sass/main.scss */
+/* line 180, ../sass/main.scss */
 .social {
   font-size: 2em !important;
   margin-top: 50px !important;
 }
-/* line 177, ../sass/main.scss */
+/* line 183, ../sass/main.scss */
 .social a:not(:last-child) {
   margin-right: 20px;
 }
 
-/* line 182, ../sass/main.scss */
+/* line 188, ../sass/main.scss */
 ul.block {
   list-style-type: none;
   margin-top: 20px;
   padding-top: 20px;
   text-align: center;
 }
-/* line 188, ../sass/main.scss */
+/* line 194, ../sass/main.scss */
 ul.block li:not(:last-child) {
   border-bottom: 1px solid #ccc;
   padding-left: 20px;
@@ -237,7 +242,7 @@ ul.block li:not(:last-child) {
   margin-bottom: 10px;
 }
 
-/* line 197, ../sass/main.scss */
+/* line 203, ../sass/main.scss */
 #codemotion {
   position: absolute;
   bottom: 10px;

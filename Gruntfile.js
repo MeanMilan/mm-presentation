@@ -5,7 +5,7 @@ module.exports = function(grunt) {
         pkg: grunt.file.readJSON('package.json'),
         watch: {
             scripts: {
-                files: ['sass/main.scss'],
+                files: ['sass/*.scss'],
                 tasks: ['compass'],
                 options: {
                     livereload: true,
@@ -39,7 +39,7 @@ module.exports = function(grunt) {
             },
             livereload: {
                 options: {
-                    open: 'http://meanday.local:9000',
+                    open: 'http://127.0.0.1:9000',
                 }
             }
         },
